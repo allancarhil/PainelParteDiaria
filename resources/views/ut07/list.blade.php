@@ -600,7 +600,7 @@
 
                     <tr>
                    
-                            <a href="uT07/excel" class="btn" style="background-color: #6ab2ec;" target="_blank">Exportar Excel</a>
+                            <a href="ut07/excel" class="btn" style="background-color: #6ab2ec;" target="_blank">Exportar Excel</a>
                        
                     </tr>
                 </tbody>

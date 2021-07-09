@@ -690,9 +690,13 @@
                     <tr>
                         <form action="ut07/{{$d->id}}/pdf" method="post" target="_blank">
                             @csrf
-                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar</button>
+                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
                         </form>
                     </tr>
+                    <tr>
+                    <a href="ut07/excel" class="btn" style="background-color: #6ab2ec;" target="_blank">Exportar EXCEL</a>
+                    </tr>
+
                 </tbody>
             </table>
         </div>

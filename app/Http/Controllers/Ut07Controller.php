@@ -39,4 +39,14 @@ class Ut07Controller extends Controller
             return view('error', compact('error'));
         }
     }
+    public function exportExcel(){
+
+        try{
+            return Excel::download(new Us36Export, 'us36.xlsx');
+
+        }catch(Exception $error){
+            echo  $error;
+        }
+    }
+
 }

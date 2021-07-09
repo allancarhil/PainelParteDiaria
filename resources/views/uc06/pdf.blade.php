@@ -19,12 +19,13 @@
                 </tr>
             </thead>
 
-            <tr>
-                <td>{{date( 'd/m/Y' , strtotime($d->data))}}</td>
-                <td>{{$d->motorista}}</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td>{{date( 'd/m/Y' , strtotime($d->data))}}</td>
+                    <td>{{$d->motorista}}</td>
+                </tr>
             </tbody>
-        
+
             
                 <thead class="table-light table-bordered">
                     <tr>
@@ -32,7 +33,7 @@
                         <th scope="col">Hora Final</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->horaInicial}}</td>
                         <td>{{$d->horaFinal}}</td>
@@ -45,22 +46,45 @@
                         <th scope="col">Horímetro Final</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->horimetroInicial}}</td>
                         <td>{{$d->horimetroFinal}}</td>
                     </tr>
                 </tbody>
+            
+
+            
+                <thead class="table-light table-bordered">
+                    <tr>
+                        <th scope="col">Balança Inicial</th>
+                        <th scope="col">Balança Final</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{$d->balancaInicial}}</td>
+                        <td>{{$d->balancaFinal}}</td>
+                    </tr>
+                </tbody>
+            
+                <thead class="table-light table-bordered">
+                    <tr>
+                        <th scope="col">Banco</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{$d->banco}}</td>
+                    </tr>
+                </tbody>
             </table>
 
-            <br />
             <table class="table">
                 <thead class="table-light table-bordered">
                     <tr style="background-color: #6ab2ec">
                         <th scope="col" width="562px">Status de Equipamento</th>
-
                     </tr>
-
                 </thead>
             </table>
 
@@ -74,7 +98,7 @@
 
 
                 </thead>
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->paradaInicial1}}</td>
                         <td>{{$d->paradaFinal1}}</td>
@@ -128,12 +152,6 @@
                 </tbody>
             </table>
 
-
-
-
-
-
-            <br />
             <table class="table">
                 <thead class="table-light table-bordered">
                     <tr style="background-color: #6ab2ec">
@@ -164,7 +182,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->b0Vol}}</td>
                         <td>{{$d->b0Mot}}</td>
@@ -192,7 +210,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->b1Vol}}</td>
                         <td>{{$d->b1Mot}}</td>
@@ -220,7 +238,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->b2Vol}}</td>
                         <td>{{$d->b2Mot}}</td>
@@ -228,7 +246,9 @@
                     </tr>
                 </tbody>
             </table>
-
+            <br/>
+            <br/>
+            
             <table class="table">
                 <thead class="table-light table-bordered">
                     <tr style="background-color: #6ab2ec">
@@ -248,7 +268,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->b4Vol}}</td>
                         <td>{{$d->b4Mot}}</td>
@@ -276,7 +296,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->aimVol}}</td>
                         <td>{{$d->aimMot}}</td>
@@ -304,7 +324,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->aifVol}}</td>
                         <td>{{$d->aifMot}}</td>
@@ -332,7 +352,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->bicaVol}}</td>
                         <td>{{$d->bicaMot}}</td>
@@ -374,7 +394,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->amprToco}}</td>
                         <td>{{$d->amprTruck}}</td>
@@ -384,10 +404,7 @@
                     </tr>
                 </tbody>
             </table>
-
-
-
-
+            <br/>
             <table class="table">
                 <thead class="table-light table-bordered">
                     <tr style="background-color: #6ab2ec">
@@ -409,7 +426,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->amumToco}}</td>
                         <td>{{$d->amumTruck}}</td>
@@ -440,7 +457,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->afToco}}</td>
                         <td>{{$d->afTruck}}</td>
@@ -471,7 +488,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->pedToco}}</td>
                         <td>{{$d->pedTruck}}</td>
@@ -498,11 +515,10 @@
                         <th>Axor</th>
                         <th>Observações</th>
 
-
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->bicaPrToco}}</td>
                         <td>{{$d->bicaPrTruck}}</td>
@@ -528,12 +544,10 @@
                         <th>Carreta</th>
                         <th>Axor</th>
                         <th>Observações</th>
-
-
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->bica790Toco}}</td>
                         <td>{{$d->bica790Truck}}</td>
@@ -543,6 +557,7 @@
                     </tr>
                 </tbody>
             </table>
+            <br/>
             <table class="table">
                 <thead class="table-light table-bordered">
                     <tr style="background-color: #6ab2ec">
@@ -559,12 +574,10 @@
                         <th>Carreta</th>
                         <th>Axor</th>
                         <th>Observações</th>
-
-
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->bicaUmToco}}</td>
                         <td>{{$d->bicaUmTruck}}</td>
@@ -590,12 +603,10 @@
                         <th>Carreta</th>
                         <th>Axor</th>
                         <th>Observações</th>
-
-
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->br1PrToco}}</td>
                         <td>{{$d->br1PrTruck}}</td>
@@ -621,12 +632,10 @@
                         <th>Carreta</th>
                         <th>Axor</th>
                         <th>Observações</th>
-
-
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->br119Toco}}</td>
                         <td>{{$d->br119Truck}}</td>
@@ -657,7 +666,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->br0PrToco}}</td>
                         <td>{{$d->br0PrTruck}}</td>
@@ -688,7 +697,7 @@
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->br0UmToco}}</td>
                         <td>{{$d->br0UmTruck}}</td>
@@ -698,6 +707,10 @@
                     </tr>
                 </tbody>
             </table>
+            <br/>
+            <br/>
+            <br/>
+
             <table class="table">
                 <thead class="table-light table-bordered">
                     <tr style="background-color: #6ab2ec">
@@ -713,15 +726,19 @@
                         <th>Truck</th>
                         <th>Carreta</th>
                         <th>Axor</th>
+                        <th>Observações</th>
+
+
                     </tr>
                 </thead>
 
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->somaToco}}</td>
                         <td>{{$d->somaTruck}}</td>
                         <td>{{$d->somaCarreta}}</td>
                         <td>{{$d->somaAxor}}</td>
+                        <td>{{$d->obsSoma}}</td>
                     </tr>
                 </tbody>
             </table>
@@ -747,7 +764,7 @@
 
                     </tr>
                 </thead>
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->lanternagem}}</td>
                         <td>{{$d->pneus}}</td>
@@ -766,7 +783,7 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 20px; font-weight:500;">
+                <tbody>
                     <tr>
                         <td>{{$d->oleo}}</td>
                         <td>{{$d->freios}}</td>
@@ -776,18 +793,20 @@
                 </tbody>
             </table>
 
-            <br />
             <table class="table">
                 <thead class="table-light table-bordered">
-                    <tr style="background-color: #6ab2ec">
+                    <tr>
                         <th scope="col">Observações</th>
                     </tr>
                 </thead>
-                <tbody style="font-size: 20px; font-weight:500;">
-                    <tr >
+                <tbody>
+                    <tr>
                         <td>{{$d->observacoes}}</td>
                     </tr>
                 </tbody>
             </table>
     </div>
+
+
+
     @endsection

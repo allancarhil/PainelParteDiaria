@@ -1,4 +1,4 @@
-@extends('layouts.app')
+﻿@extends('layouts.app')
 @section('content')
 
 <head>
@@ -48,6 +48,8 @@
                     <td>{{$d->horimetroFinal}}</td>
                 </tr>
             </tbody>
+
+            
         </table>
         <table class="table">
             <thead class="table-light table-bordered">

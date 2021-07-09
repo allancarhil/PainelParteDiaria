@@ -44,7 +44,7 @@ class Ut07Controller extends Controller
     public function exportExcel(){
 
         try{
-            return Excel::download(new Ut07Export, 'us36.xlsx');
+            return Excel::download(new Ut07Export, 'ut07.xlsx');
 
         }catch(Exception $error){
             echo  $error;

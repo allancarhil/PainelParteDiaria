@@ -86,7 +86,7 @@
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr style="background-color: #6ab2ec">
-                            <th scope="col" width="748px">Status de Equipamento</th>
+                            <th scope="col" width="562px">Status de Equipamento</th>
 
                         </tr>
                     </thead>
@@ -203,12 +203,14 @@
                         <tr>
                             <form action="ub02/{{$d->id}}/pdf" method="post" target="_blank">
                                 @csrf
-                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar</button>
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
                             </form>
-
-                            <a href="ub02/excel" class="btn" style="background-color: #6ab2ec;" target="_blank">
-                                Exportar
-                            </a>
+                        </tr>
+                        <tr>
+                            <form action="ub02/{{$d->id}}/excel" method="post" target="_blank">
+                                @csrf
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
+                            </form>
                         </tr>
                     </tbody>
                 </table>

@@ -218,7 +218,7 @@
             <table class="table">
                 <thead class="table-dark table-bordered">
                     <tr style="background-color: #6ab2ec; color:black;">
-                        <th scope="col" width="748px">Paradas: UR-01 Britador Secundário S3000</th>
+                        <th scope="col" width="748pxpx">Paradas: UR-01 Britador Secundário S3000</th>
                     </tr>
                 </thead>
             </table>
@@ -346,7 +346,7 @@
             <table class="table">
                 <thead class="table-dark table-bordered">
                     <tr style="background-color: #6ab2ec; color:black;">
-                        <th scope="col" width="748px">Paradas: UR-02 Britador Terciário H4000</th>
+                        <th scope="col" width="748pxpx">Paradas: UR-02 Britador Terciário H4000</th>
 
                     </tr>
                 </thead>
@@ -463,7 +463,7 @@
             <table class="table">
                 <thead class="table-dark table-bordered">
                     <tr style="background-color: #6ab2ec; color:black;">
-                        <th scope="col" width="748px">Paradas: UR-03 Britador Quaternário REMCO</th>
+                        <th scope="col" width="748pxpx">Paradas: UR-03 Britador Quaternário REMCO</th>
 
                     </tr>
                 </thead>
@@ -795,7 +795,13 @@
                         <tr>
                             <form action="rebritagem/{{$d->id}}/pdf" method="post" target="_blank">
                                 @csrf
-                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar</button>
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form action="rebritagem/{{$d->id}}/excel" method="post" target="_blank">
+                                @csrf
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
                             </form>
                         </tr>
                     </tbody>
@@ -803,6 +809,7 @@
 	</table>
         </div>
     </div>
+<br/>
     @endforeach
 </div>
 

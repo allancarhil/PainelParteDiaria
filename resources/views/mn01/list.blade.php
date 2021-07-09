@@ -212,17 +212,16 @@
                         <tr>
                             <form action="mn01/{{$d->id}}/pdf" method="post" target="_blank">
                                 @csrf
-                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar</button>
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
                             </form>
+                         
                         </tr>
-                    </tbody>
-
-                    <tbody>
                         <tr>
-                            <form action="mn01/{{$d->id}}/excel" method="get" target="_blank">
+                            <form action="mn01/{{$d->id}}/pdf" method="post" target="_blank">
                                 @csrf
-                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Excel</button>
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
                             </form>
+                         
                         </tr>
                     </tbody>
                 </table>

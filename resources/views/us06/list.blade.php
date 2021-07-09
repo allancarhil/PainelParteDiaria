@@ -1,4 +1,4 @@
-@extends('adminlte::page')
+﻿@extends('adminlte::page')
 
 @section('content')
 <div class="container">
@@ -203,13 +203,20 @@
                     <tr>
                         <form action="us06/{{$d->id}}/pdf" method="post" target="_blank">
                             @csrf
-                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar</button>
+                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
+                        </form>
+                    </tr>
+                    <tr>
+                        <form action="us06/{{$d->id}}/excel" method="post" target="_blank">
+                            @csrf
+                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
                         </form>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+<br/>
     @endforeach
 </div>
 

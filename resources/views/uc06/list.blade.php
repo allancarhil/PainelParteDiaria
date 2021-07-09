@@ -28,23 +28,35 @@
     @foreach($dados as $d)
     <div class="card">
         <div class="card-body">
+
+
             <table class="table">
-                <thead class="table-dark table-bordered">
+                <thead class="table-light table-bordered">
                     <tr>
                         <th scope="col">Data</th>
-                        <th scope="col">Operador</th>
                     </tr>
                 </thead>
 
                 <tr>
                     <td>{{date( 'd/m/Y' , strtotime($d->data))}}</td>
-                    <td>{{$d->motorista}}</td>
                 </tr>
                 </tbody>
             </table>
             <table class="table">
+                <thead class="table-light table-bordered">
+                    <tr>
+                        <th scope="col">Operador</th>
+                    </tr>
+                </thead>
+                <tbody style="font-size: 20px; font-weight:500;">
+                    <tr>
+                        <td>{{$d->motorista}}</td>
+                    </tr>
+                </tbody>
+
+
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th scope="col">Hora Inicial</th>
                             <th scope="col">Hora Final</th>
@@ -61,7 +73,7 @@
 
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th scope="col">Horímetro Inicial</th>
                             <th scope="col">Horímetro Final</th>
@@ -79,8 +91,8 @@
        
                 <br />
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="562px">Status de Equipamento</th>
 
                         </tr>
@@ -89,7 +101,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th scope="col">Inicio</th>
                             <th scope="col">Fim</th>
@@ -159,8 +171,8 @@
 
                 <br />
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">Viagens Internas</th>
 
                         </tr>
@@ -170,8 +182,8 @@
 
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">B#0</th>
                         </tr>
                     </thead>
@@ -179,7 +191,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Volume</th>
                             <th>Motorista</th>
@@ -198,8 +210,8 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">B#1</th>
                         </tr>
                     </thead>
@@ -207,7 +219,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Volume</th>
                             <th>Motorista</th>
@@ -226,8 +238,8 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">B#2</th>
                         </tr>
                     </thead>
@@ -235,7 +247,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Volume</th>
                             <th>Motorista</th>
@@ -254,8 +266,8 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">B#4</th>
                         </tr>
                     </thead>
@@ -263,7 +275,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Volume</th>
                             <th>Motorista</th>
@@ -282,8 +294,8 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">AIM</th>
                         </tr>
                     </thead>
@@ -291,7 +303,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Volume</th>
                             <th>Motorista</th>
@@ -310,8 +322,8 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">AIF</th>
                         </tr>
                     </thead>
@@ -319,7 +331,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Volume</th>
                             <th>Motorista</th>
@@ -338,8 +350,8 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="442px">Bica</th>
                         </tr>
                     </thead>
@@ -347,7 +359,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Volume</th>
                             <th>Motorista</th>
@@ -367,8 +379,8 @@
 
                 <br />
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735 px">Viagens por hora</th>
 
                         </tr>
@@ -378,15 +390,15 @@
 
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Areia Média-Praça</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -413,15 +425,15 @@
 
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Areia Média-U&M</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -444,15 +456,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Areia Fina</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -475,15 +487,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Pedrisco</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -506,15 +518,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Bica-Praça</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -537,15 +549,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Bica-790</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -568,15 +580,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Bica-U&M</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -599,15 +611,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Brita 1-Praça</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -630,15 +642,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Brita 1-19mm</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -661,15 +673,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Brita 0-praça</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -692,15 +704,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Brita 0-U&M</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -723,15 +735,15 @@
                     </tbody>
                 </table>
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="735px">Total</th>
                         </tr>
                     </thead>
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th>Toco</th>
                             <th>Truck</th>
@@ -752,8 +764,8 @@
 
                 <br />
                 <table class="table">
-                    <thead class="table-dark table-bordered">
-                        <tr style="background-color: #6ab2ec; color: black;">
+                    <thead class="table-light table-bordered">
+                        <tr style="background-color: #6ab2ec">
                             <th scope="col" width="748px">Status de Equipamento</th>
 
                         </tr>
@@ -762,7 +774,7 @@
                 </table>
 
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th scope="col">Lanternagem</th>
                             <th scope="col">Pneus</th>
@@ -781,7 +793,7 @@
                         </tr>
                     </tbody>
 
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
 
                             <th scope="col">Nível de óleo</th>
@@ -802,7 +814,7 @@
 
                 <br />
                 <table class="table">
-                    <thead class="table-dark table-bordered">
+                    <thead class="table-light table-bordered">
                         <tr>
                             <th scope="col">Observações</th>
                         </tr>
@@ -820,7 +832,13 @@
                         <tr>
                             <form action="uc06/{{$d->id}}/pdf" method="post" target="_blank">
                                 @csrf
-                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar</button>
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
+                            </form>
+                        </tr>
+                        <tr>
+                            <form action="uc06/{{$d->id}}/excel" method="post" target="_blank">
+                                @csrf
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
                             </form>
                         </tr>
                     </tbody>

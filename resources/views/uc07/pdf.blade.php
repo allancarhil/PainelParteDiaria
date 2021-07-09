@@ -765,7 +765,7 @@
         </table>
         <table class="table">
             <thead class="table-light table-bordered">
-                <tr style="background-color: #6ab2ec">
+                <tr>
                     <th scope="col">Observações</th>
                 </tr>
             </thead>

@@ -17,13 +17,12 @@
                     <th scope="col">Operador</th>
                 </tr>
             </thead>
-            <tbody style="font-size: 20px; font-weight:500;">
+            <tbody>
                 <tr>
                     <td>{{date( 'd/m/Y' , strtotime($d->data))}}</td>
                     <td>{{$d->motorista}}</td>
                 </tr>
             </tbody>
-
 
             <thead class="table-light table-bordered">
                 <tr>
@@ -31,7 +30,7 @@
                     <th scope="col">Hora Final</th>
                 </tr>
             </thead>
-            <tbody style="font-size: 20px; font-weight:500;">
+            <tbody>
                 <tr>
                     <td>{{$d->horaInicial}}</td>
                     <td>{{$d->horaFinal}}</td>
@@ -44,16 +43,23 @@
                     <th scope="col">Horímetro Final</th>
                 </tr>
             </thead>
-            <tbody style="font-size: 20px; font-weight:500;">
+            <tbody>
                 <tr>
                     <td>{{$d->horimetroInicial}}</td>
                     <td>{{$d->horimetroFinal}}</td>
                 </tr>
             </tbody>
 
-
+            <thead class="table-light table-bordered">
+                <tr>
+                    <th scope="col">Banco</th>
+                </tr>
             </thead>
-
+            <tbody>
+                <tr>
+                    <td>{{$d->banco}}</td>
+                </tr>
+            </tbody>
         </table>
 
         <br />
@@ -74,10 +80,8 @@
                     <th scope="col">Fim</th>
                     <th scope="col">Descrição</th>
                 </tr>
-
-
             </thead>
-            <tbody style="font-size: 20px; font-weight:500;">
+            <tbody>
                 <tr>
                     <td>{{$d->paradaInicial1}}</td>
                     <td>{{$d->paradaFinal1}}</td>
@@ -150,7 +154,7 @@
 
                 </tr>
             </thead>
-            <tbody style="font-size: 20px; font-weight:500;">
+            <tbody>
                 <tr>
                     <td>{{$d->lanternagem}}</td>
                     <td>{{$d->oleo}}</td>
@@ -168,14 +172,12 @@
                     <th scope="col">Observações</th>
                 </tr>
             </thead>
-            <tbody style="font-size: 20px; font-weight:500;">
+            <tbody>
                 <tr>
                     <td>{{$d->observacoes}}</td>
                 </tr>
             </tbody>
         </table>
-        </table>
-        <br />
     </div>
 </div>
 

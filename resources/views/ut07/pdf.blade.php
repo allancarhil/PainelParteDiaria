@@ -597,12 +597,6 @@
 
 
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr style="background-color: #6ab2ec; color: black;">
@@ -631,9 +625,6 @@
                     <td>{{$d->parteEletrica}}</td>
                 </tr>
             </tbody>
-
-        </table>
-        <table class="table">
 
             <thead class="table-light table-bordered">
                 <tr>

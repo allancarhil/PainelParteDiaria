@@ -45,6 +45,7 @@ Route::post('mn01/{id}/pdf', [App\Http\Controllers\Mn01Controller::class, 'expor
 Route::post('/ut07', [App\Http\Controllers\Ut07Controller::class, 'data'])->middleware('auth');
 Route::get('/ut07/form', [App\Http\Controllers\Ut07Controller::class, 'form'])->middleware('auth');
 Route::post('ut07/{id}/pdf', [App\Http\Controllers\Ut07Controller::class, 'exportPDF'])->name('pdf');
+Route::get('ut07/excel', [App\Http\Controllers\Ut07Controller::class, 'exportExcel'])->name('excel');
 #End Ut07 Routes
 
 #Ut08 Routes

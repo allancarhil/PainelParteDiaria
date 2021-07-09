@@ -534,9 +534,9 @@
 
             </tbody>
         </table>
-        <br />
-        <br />
-        <br />
+        <br/>
+        <br/>
+        <br/>
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr style="background-color: #6ab2ec; color:black">
@@ -565,12 +565,7 @@
 
             </tbody>
         </table>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr style="background-color: #6ab2ec; color:black">
@@ -600,9 +595,6 @@
                 </tr>
             </tbody>
 
-
-        </table>
-        <table class="table">
             <thead class="table-light table-bordered">
                 <tr>
 
@@ -621,6 +613,7 @@
                 </tr>
             </tbody>
         </table>
+
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr>

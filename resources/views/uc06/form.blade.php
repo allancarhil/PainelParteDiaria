@@ -4,7 +4,7 @@
 <div class="container">
     <div class="card justify-content-center">
         <div class="card-header " style="background-color: #6ab2ec">
-            <h1>Uc06</h1>
+            <h1 style="font-weight: bold;">UC-06</h1>
         </div>
         <div class="card-body">
              @if (session('status'))

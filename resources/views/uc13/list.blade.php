@@ -28,7 +28,7 @@
     <div class="card">
         <div class="card-body">
             <table class="table">
-                <thead class="table-dark table-bordered">
+                <thead class="table-light table-bordered">
                     <tr>
                         <th scope="col">Data</th>
                         <th scope="col">Operador</th>
@@ -41,7 +41,7 @@
                     </tr>
                 </tbody>
 
-                <thead class="table-dark table-bordered">
+                <thead class="table-light table-bordered">
                     <tr>
                         <th scope="col">Hora Inicial</th>
                         <th scope="col">Hora Final</th>
@@ -54,7 +54,7 @@
                     </tr>
                 </tbody>
 
-                <thead class="table-dark table-bordered">
+                <thead class="table-light table-bordered">
                     <tr>
                         <th scope="col">Horímetro Inicial</th>
                         <th scope="col">Horímetro Final</th>
@@ -70,15 +70,15 @@
                
             </table>
             <table class="table">
-                <thead class="table-dark table-bordered">
-                    <tr style="background-color: #6ab2ec; color: black;">
+                <thead class="table-light table-bordered">
+                    <tr style="background-color: #6ab2ec">
                         <th scope="col" width="562px">Status de Equipamento</th>
 
                     </tr>
                 </thead>
             </table>
             <table class="table">
-                <thead class="table-dark table-bordered">
+                <thead class="table-light table-bordered">
                     <tr>
                         <th scope="col">Inicio</th>
                         <th scope="col">Fim</th>
@@ -139,15 +139,15 @@
                 </tbody>
             </table>
             <table class="table">
-                <thead class="table-dark table-bordered">
-                    <tr style="background-color: #6ab2ec; color: black;">
+                <thead class="table-light table-bordered">
+                    <tr style="background-color: #6ab2ec">
                         <th scope="col" width="748px">Status de Equipamento</th>
 
                     </tr>
                 </thead>
             </table>
             <table class="table">
-                <thead class="table-dark table-bordered">
+                <thead class="table-light table-bordered">
                     <tr>
                         <th scope="col">Lanternagem</th>
                         <th scope="col">Nível de óleo</th>
@@ -167,7 +167,7 @@
             </table>
 
             <table class="table">
-                <thead class="table-dark table-bordered">
+                <thead class="table-light table-bordered">
                     <tr>
                         <th scope="col">Observações</th>
                     </tr>
@@ -184,16 +184,24 @@
                     <tr>
                         <form action="uc13/{{$d->id}}/pdf" method="post" target="_blank">
                             @csrf
-                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar</button>
+                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
+                        </form>
+                    </tr>
+                    <tr>
+                        <form action="uc13/{{$d->id}}/excel" method="post" target="_blank">
+                            @csrf
+                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
                         </form>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
+<br/>
+@endforeach
 </div>
 
-@endforeach
+
 
 @endif
 @endsection

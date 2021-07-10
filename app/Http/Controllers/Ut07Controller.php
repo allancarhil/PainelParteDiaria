@@ -50,5 +50,4 @@ class Ut07Controller extends Controller
             echo  $error;
         }
     }
-
 }

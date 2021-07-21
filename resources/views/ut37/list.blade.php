@@ -591,7 +591,7 @@
                 <br />
                 <table class="table">
                 <tbody style="font-size: 20px; font-weight:500;">
-                    <tr>
+                <tr>
                         <form action="ut37/{{$d->id}}/pdf" method="post" target="_blank">
                             @csrf
                             <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>

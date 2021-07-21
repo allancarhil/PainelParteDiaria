@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Exception;
 use PDF;
 use App\Models\Api;
+use App\Exports\Uc14Export;
+use Maatwebsite\Excel\Facades\Excel as Excel;
 
 class Uc14Controller extends Controller
 {
@@ -37,6 +39,15 @@ class Uc14Controller extends Controller
             return $pdf->stream('uc14-relatorio.pdf', array("Attachment" => true));
         }catch(Exception $error ){
             return view('error', compact('error'));
+        }
+    }
+    public function exportExcel(){
+
+        try{
+            return Excel::download(new Uc14Export, 'uc14.xlsx');
+
+        }catch(Exception $error){
+            echo  $error;
         }
     }
 }

@@ -6,6 +6,8 @@ use Exception;
 use Illuminate\Http\Request;
 use PDF;
 use App\Models\Api;
+use App\Exports\RebritagemExport;
+use Maatwebsite\Excel\Facades\Excel as Excel;
 
 class RebritagemController extends Controller{
     public function data(Request $request){
@@ -34,6 +36,15 @@ class RebritagemController extends Controller{
             return $pdf->stream('rebritagem-relatorio.pdf', array("Attachment" => true));
         }catch(Exception $error ){
             return view('error', compact('error'));
+        }
+    }
+    public function exportExcel(){
+
+        try{
+            return Excel::download(new RebritagemExport, 'rebritagem.xlsx');
+
+        }catch(Exception $error){
+            echo  $error;
         }
     }
 }

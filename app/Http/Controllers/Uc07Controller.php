@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Exception;
 use PDF;
 use App\Models\Api;
+use App\Exports\Uc07Export;
+use Maatwebsite\Excel\Facades\Excel as Excel;
 
 class Uc07Controller extends Controller{
 
@@ -43,5 +45,14 @@ class Uc07Controller extends Controller{
             return view('error', compact('error'));
             
         } 
+    }
+    public function exportExcel(){
+
+        try{
+            return Excel::download(new Uc07Export, 'uc07.xlsx');
+
+        }catch(Exception $error){
+            echo  $error;
+        }
     }
 }

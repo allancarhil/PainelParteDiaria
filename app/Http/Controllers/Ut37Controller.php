@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use PDF;
 use Exception;
 use App\Models\Api;
+use App\Exports\Ut37Export;
+use Maatwebsite\Excel\Facades\Excel as Excel;
 
 class Ut37Controller extends Controller{
     public function data(Request $request){
@@ -36,6 +38,15 @@ class Ut37Controller extends Controller{
             return $pdf->stream('ut37-relatorio.pdf', array("Attachment" => true));
         }catch(Exception $error ){
             return view('error', compact('error'));
+        }
+    }
+    public function exportExcel(){
+
+        try{
+            return Excel::download(new Ut37Export, 'ut37.xlsx');
+
+        }catch(Exception $error){
+            echo  $error;
         }
     }
 }

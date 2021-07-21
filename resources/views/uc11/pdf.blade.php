@@ -8,7 +8,6 @@
     <div class="card-header" style="background-color: #6ab2ec">
         <h1 style="font-weight: bold;">UC-11</h1>
     </div>
-
     <div class="card-body">
         <table class="table">
             <thead class="table-light table-bordered">
@@ -50,29 +49,16 @@
                 </tr>
             </tbody>
 
-            <thead class="table-light table-bordered">
-                <tr>
-                    <th scope="col">Banco</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>{{$d->banco}}</td>
-                </tr>
-            </tbody>
+            
         </table>
-
-        <br />
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr style="background-color: #6ab2ec">
                     <th scope="col" width="562px">Status de Equipamento</th>
 
                 </tr>
-
             </thead>
         </table>
-
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr>
@@ -134,7 +120,6 @@
                 </tr>
             </tbody>
         </table>
-
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr style="background-color: #6ab2ec">
@@ -143,7 +128,6 @@
                 </tr>
             </thead>
         </table>
-
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr>
@@ -164,8 +148,6 @@
             </tbody>
         </table>
 
-
-        <br />
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr>

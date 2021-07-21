@@ -70,7 +70,7 @@
                     <table class="table">
                         <thead class="table-dark table-bordered">
                             <tr style="background-color: #6ab2ec">
-                                <th scope="col" width="748px">Status de Equipamento</th>
+                                <th scope="col" width="748px">Paradas de Equipamento</th>
 
                             </tr>
 

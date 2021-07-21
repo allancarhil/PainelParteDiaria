@@ -32,6 +32,7 @@ Route::get('us36/excel', [App\Http\Controllers\Us36Controller::class, 'exportExc
 Route::post('/us06', [App\Http\Controllers\Us06Controller::class, 'data'])->middleware('auth');
 Route::get('/us06/form', [App\Http\Controllers\Us06Controller::class, 'form'])->middleware('auth');
 Route::post('us06/{id}/pdf', [App\Http\Controllers\Us06Controller::class, 'exportPDF'])->name('pdf');
+Route::get('us06/excel', [App\Http\Controllers\Us06Controller::class, 'exportExcel'])->name('excel');
 #End Us06 Routes
 
 #Mn01 Routes
@@ -39,6 +40,7 @@ Route::post('us06/{id}/pdf', [App\Http\Controllers\Us06Controller::class, 'expor
 Route::post('/mn01', [App\Http\Controllers\Mn01Controller::class, 'data'])->middleware('auth');
 Route::get('/mn01/form', [App\Http\Controllers\Mn01Controller::class, 'form'])->middleware('auth');
 Route::post('mn01/{id}/pdf', [App\Http\Controllers\Mn01Controller::class, 'exportPDF'])->name('pdf');
+Route::get('mn01/excel', [App\Http\Controllers\Mn01Controller::class, 'exportExcel'])->name('excel');
 #End Mn01 Routes
 
 #Ut07 Routes
@@ -52,18 +54,21 @@ Route::get('ut07/excel', [App\Http\Controllers\Ut07Controller::class, 'exportExc
 Route::post('/ut08', [App\Http\Controllers\Ut08Controller::class, 'data'])->middleware('auth');
 Route::get('/ut08/form', [App\Http\Controllers\Ut08Controller::class, 'form'])->middleware('auth');
 Route::post('ut08/{id}/pdf', [App\Http\Controllers\Ut08Controller::class, 'exportPDF'])->name('pdf');
+Route::get('ut08/excel', [App\Http\Controllers\Ut08Controller::class, 'exportExcel'])->name('excel');
 #End Ut08 Routes
 
 #Ut37 Routes
 Route::post('/ut37', [App\Http\Controllers\Ut37Controller::class, 'data'])->middleware('auth');
 Route::get('/ut37/form', [App\Http\Controllers\Ut37Controller::class, 'form'])->middleware('auth');
 Route::post('ut37/{id}/pdf', [App\Http\Controllers\Ut37Controller::class, 'exportPDF'])->name('pdf');
+Route::get('ut37/excel', [App\Http\Controllers\Ut37Controller::class, 'exportExcel'])->name('excel');
 #End Ut37 Routes
 
 #Up0507 Routes
 Route::post('/up0507', [App\Http\Controllers\Up0507Controller::class, 'data'])->middleware('auth');
 Route::get('/up0507/form', [App\Http\Controllers\Up0507Controller::class, 'form'])->middleware('auth');
 Route::post('up0507/{id}/pdf', [App\Http\Controllers\Up0507Controller::class, 'exportPDF'])->name('pdf');
+Route::get('up0507/excel', [App\Http\Controllers\Up0507Controller::class, 'exportExcel'])->name('excel');
 #End Up0507 Routes
 
 
@@ -71,30 +76,35 @@ Route::post('up0507/{id}/pdf', [App\Http\Controllers\Up0507Controller::class, 'e
 Route::post('/uc06', [App\Http\Controllers\Uc06Controller::class, 'data'])->middleware('auth');
 Route::get('/uc06/form', [App\Http\Controllers\Uc06Controller::class, 'form'])->middleware('auth');
 Route::post('uc06/{id}/pdf', [App\Http\Controllers\Uc06Controller::class, 'exportPDF'])->name('pdf');
+Route::get('uc06/excel', [App\Http\Controllers\Uc06Controller::class, 'exportExcel'])->name('excel');
 #End Uc06 Routes
 
 #Uc07 Routes
 Route::post('/uc07', [App\Http\Controllers\Uc07Controller::class, 'data'])->middleware('auth');
 Route::get('/uc07/form', [App\Http\Controllers\Uc07Controller::class, 'form'])->middleware('auth');
 Route::post('uc07/{id}/pdf', [App\Http\Controllers\Uc07Controller::class, 'exportPDF'])->name('pdf');
+Route::get('uc07/excel', [App\Http\Controllers\Uc07Controller::class, 'exportExcel'])->name('excel');
 #End Uc07 Routes
 
 #Uc11 Routes
 Route::post('/uc11', [App\Http\Controllers\Uc11Controller::class, 'data'])->middleware('auth');
 Route::get('/uc11/form', [App\Http\Controllers\Uc11Controller::class, 'form'])->middleware('auth');
 Route::post('uc11/{id}/pdf', [App\Http\Controllers\Uc11Controller::class, 'exportPDF'])->name('pdf');
+Route::get('uc11/excel', [App\Http\Controllers\Uc11Controller::class, 'exportExcel'])->name('excel');
 #End Uc11 Routes
 
 #Uc13 Routes
 Route::post('/uc13', [App\Http\Controllers\Uc13Controller::class, 'data'])->middleware('auth');
 Route::get('/uc13/form', [App\Http\Controllers\Uc13Controller::class, 'form'])->middleware('auth');
 Route::post('uc13/{id}/pdf', [App\Http\Controllers\Uc13Controller::class, 'exportPDF'])->name('pdf');
+Route::get('uc13/excel', [App\Http\Controllers\Uc13Controller::class, 'exportExcel'])->name('excel');
 #End Uc13 Routes
 
 #Uc14 Routes
 Route::post('/uc14', [App\Http\Controllers\Uc14Controller::class, 'data'])->middleware('auth');
 Route::get('/uc14/form', [App\Http\Controllers\Uc14Controller::class, 'form'])->middleware('auth');
 Route::post('uc14/{id}/pdf', [App\Http\Controllers\Uc14Controller::class, 'exportPDF'])->name('pdf');
+Route::get('uc14/excel', [App\Http\Controllers\Uc14Controller::class, 'exportExcel'])->name('excel');
 #End Uc14 Routes
 
 #Ub02 Routes
@@ -108,12 +118,14 @@ Route::get('ub02/excel', [App\Http\Controllers\Ub02Controller::class, 'exportExc
 Route::post('/usina', [App\Http\Controllers\UsinaController::class, 'data'])->middleware('auth');
 Route::get('/usina/form', [App\Http\Controllers\UsinaController::class, 'form'])->middleware('auth');
 Route::post('usina/{id}/pdf', [App\Http\Controllers\UsinaController::class, 'exportPDF'])->name('pdf');
+Route::get('usina/excel', [App\Http\Controllers\UsinaController::class, 'exportExcel'])->name('excel');
 #End Usina Routes
 
 #Rebritagem Routes
 Route::post('/rebritagem', [App\Http\Controllers\RebritagemController::class, 'data'])->middleware('auth');
 Route::get('/rebritagem/form', [App\Http\Controllers\RebritagemController::class, 'form'])->middleware('auth');
 Route::post('rebritagem/{id}/pdf', [App\Http\Controllers\RebritagemController::class, 'exportPDF'])->name('pdf');
+Route::get('rebritagem/excel', [App\Http\Controllers\RebritagemController::class, 'exportExcel'])->name('excel');
 #End Rebritagem Routes
 
 

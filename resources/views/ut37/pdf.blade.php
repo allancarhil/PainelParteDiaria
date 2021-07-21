@@ -71,21 +71,17 @@
             <thead class="table-light table-bordered">
                 <tr style="background-color: #6ab2ec; color: black;">
                     <th scope="col" width="588px">Paradas de Equipamento</th>
-
                 </tr>
-
             </thead>
         </table>
 
         <table class="table">
             <thead class="table-light table-bordered">
                 <tr style="background-color: #6ab2ec; color: black;">
-                    <th scope="col">Inicio</th>
+                    <th scope="col" >Inicio</th>
                     <th scope="col">Fim</th>
                     <th scope="col">Descrição</th>
                 </tr>
-
-
             </thead>
             <tbody>
                 <tr>
@@ -157,21 +153,13 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-07:00 às 08:00</th>
-                    <th>790E-07:00 às 08:00</th>
-                    <th>790D-07:00 às 08:00</th>
-                    <th>800-07:00 às 08:00</th>
-                    <th>810-07:00 às 08:00</th>
-                    <th>U&M-07:00 às 08:00</th>
+                    
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>{{$d->numViagens78078}}</td>
-                    <td>{{$d->numViagens790E78}}</td>
-                    <td>{{$d->numViagens790D78}}</td>
-                    <td>{{$d->numViagens80078}}</td>
-                    <td>{{$d->numViagens81078}}</td>
-                    <td>{{$d->numViagensUm78}}</td>
+                   
                 </tr>
             </tbody>
         </table>
@@ -182,22 +170,14 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-08:00 às 09:00</th>
-                    <th>790E-08:00 às 09:00</th>
-                    <th>790D-08:00 às 09:00</th>
-                    <th>800-08:00 às 09:00</th>
-                    <th>810-08:00 às 09:00</th>
-                    <th>U&M-08:00 às 09:00</th>
+                    
                 </tr>
             </thead>
 
             <tbody>
                 <tr>
                     <td>{{$d->numViagens78089}}</td>
-                    <td>{{$d->numViagens790E89}}</td>
-                    <td>{{$d->numViagens790D89}}</td>
-                    <td>{{$d->numViagens80089}}</td>
-                    <td>{{$d->numViagens81089}}</td>
-                    <td>{{$d->numViagensUm89}}</td>
+                    
                 </tr>
             </tbody>
         </table>
@@ -206,22 +186,15 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-09:00 às 10:00</th>
-                    <th>790E-09:00 às 10:00</th>
-                    <th>790D-09:00 às 10:00</th>
-                    <th>800-09:00 às 10:00</th>
-                    <th>810-09:00 às 10:00</th>
-                    <th>U&M-09:00 às 10:00</th>
+                    
                 </tr>
+
 
             </thead>
             <tbody>
                 <tr>
                     <td>{{$d->numViagens780910}}</td>
-                    <td>{{$d->numViagens790E910}}</td>
-                    <td>{{$d->numViagens790D910}}</td>
-                    <td>{{$d->numViagens800910}}</td>
-                    <td>{{$d->numViagens810910}}</td>
-                    <td>{{$d->numViagensUm910}}</td>
+                   
                 </tr>
 
             </tbody>
@@ -231,11 +204,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-10:00 às 11:00</th>
-                    <th>790E-10:00 às 11:00</th>
-                    <th>790D-10:00 às 11:00</th>
-                    <th>800-10:00 às 11:00</th>
-                    <th>810-10:00 às 11:00</th>
-                    <th>U&M-10:00 às 11:00</th>
+                   
                 </tr>
 
 
@@ -243,11 +212,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801011}}</td>
-                    <td>{{$d->numViagens790E1011}}</td>
-                    <td>{{$d->numViagens790D1011}}</td>
-                    <td>{{$d->numViagens8001011}}</td>
-                    <td>{{$d->numViagens8101011}}</td>
-                    <td>{{$d->numViagensUm1011}}</td>
+                    
                 </tr>
 
             </tbody>
@@ -259,11 +224,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-11:00 às 12:00</th>
-                    <th>790E-11:00 às 12:00</th>
-                    <th>790D-11:00 às 12:00</th>
-                    <th>800-11:00 às 12:00</th>
-                    <th>810-11:00 às 12:00</th>
-                    <th>U&M-11:00 às 12:00</th>
+                    
                 </tr>
 
 
@@ -271,11 +232,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801112}}</td>
-                    <td>{{$d->numViagens790E1112}}</td>
-                    <td>{{$d->numViagens790D1112}}</td>
-                    <td>{{$d->numViagens8001112}}</td>
-                    <td>{{$d->numViagens8101112}}</td>
-                    <td>{{$d->numViagensUm1112}}</td>
+                   
                 </tr>
 
             </tbody>
@@ -286,11 +243,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-12:00 às 13:00</th>
-                    <th>790E-12:00 às 13:00</th>
-                    <th>790D-12:00 às 13:00</th>
-                    <th>800-12:00 às 13:00</th>
-                    <th>810-12:00 às 13:00</th>
-                    <th>U&M-12:00 às 13:00</th>
+                   
                 </tr>
 
 
@@ -298,11 +251,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801213}}</td>
-                    <td>{{$d->numViagens790E1213}}</td>
-                    <td>{{$d->numViagens790D1213}}</td>
-                    <td>{{$d->numViagens8001213}}</td>
-                    <td>{{$d->numViagens8101213}}</td>
-                    <td>{{$d->numViagensUm1213}}</td>
+                    
                 </tr>
 
             </tbody>
@@ -312,11 +261,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-13:00 às 14:00</th>
-                    <th>790E-13:00 às 14:00</th>
-                    <th>790D-13:00 às 14:00</th>
-                    <th>800-13:00 às 14:00</th>
-                    <th>810-13:00 às 14:00</th>
-                    <th>U&M-13:00 às 14:00</th>
+                   
                 </tr>
 
 
@@ -324,11 +269,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801314}}</td>
-                    <td>{{$d->numViagens790E1314}}</td>
-                    <td>{{$d->numViagens790D1314}}</td>
-                    <td>{{$d->numViagens8001314}}</td>
-                    <td>{{$d->numViagens8101314}}</td>
-                    <td>{{$d->numViagensUm1314}}</td>
+                    
                 </tr>
 
             </tbody>
@@ -338,11 +279,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-14:00 às 15:00</th>
-                    <th>790E-14:00 às 15:00</th>
-                    <th>790D-14:00 às 15:00</th>
-                    <th>800-14:00 às 15:00</th>
-                    <th>810-14:00 às 15:00</th>
-                    <th>U&M-14:00 às 15:00</th>
+                   
                 </tr>
 
 
@@ -350,11 +287,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801415}}</td>
-                    <td>{{$d->numViagens790E1415}}</td>
-                    <td>{{$d->numViagens790D1415}}</td>
-                    <td>{{$d->numViagens8001415}}</td>
-                    <td>{{$d->numViagens8101415}}</td>
-                    <td>{{$d->numViagensUm1415}}</td>
+                   
                 </tr>
 
             </tbody>
@@ -364,11 +297,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-15:00 às 16:00</th>
-                    <th>790E-15:00 às 16:00</th>
-                    <th>790D-15:00 às 16:00</th>
-                    <th>800-15:00 às 16:00</th>
-                    <th>810-15:00 às 16:00</th>
-                    <th>U&M-15:00 às 16:00</th>
+                    
                 </tr>
 
 
@@ -376,11 +305,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801516}}</td>
-                    <td>{{$d->numViagens790E1516}}</td>
-                    <td>{{$d->numViagens790D1516}}</td>
-                    <td>{{$d->numViagens8001516}}</td>
-                    <td>{{$d->numViagens8101516}}</td>
-                    <td>{{$d->numViagensUm1516}}</td>
+                   
                 </tr>
 
             </tbody>
@@ -391,11 +316,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-16:00 às 17:00</th>
-                    <th>790E-16:00 às 17:00</th>
-                    <th>790D-16:00 às 17:00</th>
-                    <th>800-16:00 às 17:00</th>
-                    <th>810-16:00 às 17:00</th>
-                    <th>U&M-16:00 às 17:00</th>
+                    
                 </tr>
 
 
@@ -403,11 +324,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801617}}</td>
-                    <td>{{$d->numViagens790E1617}}</td>
-                    <td>{{$d->numViagens790D1617}}</td>
-                    <td>{{$d->numViagens8001617}}</td>
-                    <td>{{$d->numViagens8101617}}</td>
-                    <td>{{$d->numViagensUm1617}}</td>
+                    
                 </tr>
 
             </tbody>
@@ -417,11 +334,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>780-17:00 às 18:00</th>
-                    <th>790E-17:00 às 18:00</th>
-                    <th>790D-17:00 às 18:00</th>
-                    <th>800-17:00 às 18:00</th>
-                    <th>810-17:00 às 18:00</th>
-                    <th>U&M-17:00 às 18:00</th>
+                    
                 </tr>
 
 
@@ -429,11 +342,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->numViagens7801718}}</td>
-                    <td>{{$d->numViagens790E1718}}</td>
-                    <td>{{$d->numViagens790D1718}}</td>
-                    <td>{{$d->numViagens8001718}}</td>
-                    <td>{{$d->numViagens8101718}}</td>
-                    <td>{{$d->numViagensUm1718}}</td>
+                   
                 </tr>
 
             </tbody>
@@ -443,11 +352,7 @@
             <thead class="table-light table-bordered">
                 <tr>
                     <th>Soma 780</th>
-                    <th>Soma 790E</th>
-                    <th>Soma 790D</th>
-                    <th>Soma 800</th>
-                    <th>Soma 810</th>
-                    <th>Soma U&M</th>
+                   
                 </tr>
 
 
@@ -455,11 +360,7 @@
             <tbody>
                 <tr>
                     <td>{{$d->soma780}}</td>
-                    <td>{{$d->soma790e}}</td>
-                    <td>{{$d->soma790d}}</td>
-                    <td>{{$d->soma800}}</td>
-                    <td>{{$d->soma810}}</td>
-                    <td>{{$d->somaUm}}</td>
+                   
                 </tr>
 
             </tbody>
@@ -521,10 +422,13 @@
                     <td>{{$d->numViagensBr119}}</td>
                     <td>{{$d->numViagensBr0Pr}}</td>
                     <td>{{$d->numViagensBr0Um}}</td>
+                    <td></td>
                 </tr>
 
             </tbody>
         </table>
+
+
 
         <br />
         <table class="table">
@@ -561,6 +465,7 @@
 
             </tbody>
         </table>
+
 
         <br />
         <table class="table">
@@ -640,6 +545,7 @@
                     <td>{{$d->oleo}}</td>
                     <td>{{$d->freios}}</td>
                     <td>{{$d->direcao}}</td>
+                    <td></td>
 
                 </tr>
             </tbody>
@@ -660,4 +566,6 @@
         </table>
     </div>
 </div>
+
+
 @endsection

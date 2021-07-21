@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Exception;
 use Illuminate\Http\Request;
 use App\Models\Api;
-use App\Exports\RelatoriosExport;
+use App\Exports\Mn01Export;
 use Maatwebsite\Excel\Facades\Excel as Excel;
 //use Maatwebsite\Excel\Excel as ExcelExcel;
 
@@ -43,38 +43,10 @@ class Mn01Controller extends Controller
         }
     }
 
-    public function exportExcel($id){
+    public function exportExcel(){
 
         try{
-
-            $api = new Api();
-            $d = $api->getAll("mn01/" . $id);
-
-            Excel::create('New file', function($excel) {
-
-                $excel->sheet('New sheet', function($sheet) {
-            
-                    $sheet->loadView('mn01.pdf');
-            
-                });
-            
-            });
-
-            //RelatoriosExport::useExcel();
-            //$relatorio =  new RelatoriosExport();
-
-           // dd($relatorio);
-           return Excel::download($d, 'users.xlsx');
-           //$excel = new RelatoriosExport();
-           
-           //$d = $excel->collection();
-
-           //$dados = (object) $d;
-           //var_dump($dados);
-           //return Excel::download($dados, 'users.xlsx');
-           
-
-
+            return Excel::download(new Mn01Export, 'mn01.xlsx');
 
         }catch(Exception $error){
             echo  $error;

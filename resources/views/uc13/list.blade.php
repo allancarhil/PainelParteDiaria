@@ -188,11 +188,10 @@
                         </form>
                     </tr>
                     <tr>
-                        <form action="uc13/{{$d->id}}/excel" method="post" target="_blank">
-                            @csrf
-                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
-                        </form>
-                    </tr>
+                   
+                   <a href="uc13/excel" class="btn" style="background-color: #6ab2ec;" target="_blank">Exportar Excel</a>
+              
+           </tr>
                 </tbody>
             </table>
         </div>

@@ -15,7 +15,7 @@ class Up0507Export implements FromView
     {
         
         $api = new Api();
-        $dados = $api->getAll("up0507");
+        $dados = $api->getAll("up0506");
 
         return view('exports.up0507Exports', [
             'dados' => $dados

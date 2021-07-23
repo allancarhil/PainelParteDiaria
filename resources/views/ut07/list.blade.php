@@ -603,6 +603,11 @@
                             <a href="ut07/excel" class="btn" style="background-color: #6ab2ec;" target="_blank">Exportar Excel</a>
                        
                     </tr>
+                    <tr>
+                   
+                            <a href="envio-email" class="btn" style="background-color: #6ab2ec;" target="_blank">Enviar por email</a>
+                       
+                    </tr>
                 </tbody>
             </table>
         </div>

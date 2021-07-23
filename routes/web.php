@@ -180,7 +180,7 @@ Route::get('/rebritagemResumo', [App\Http\Controllers\rebritagemResumoController
 Route::get('envio-email',function(){
     $user=new stdClass();
     $user->name='Allan';
-    $user->email='kadu@petraagregados.com';
+    $user->email='adriano@petraagregados.com';
     //return new newparteDiaria($user);
     Mail::send(new newparteDiaria($user));
     }

@@ -31,6 +31,7 @@ class newparteDiaria extends Mailable
     {
         $this->subject('Relatório de parte diária');
         $this->to($this->user->email, $this->user->name);
+        $this->attach(public_path('mn01-relatorio.pdf'));
         return $this->view('Mail.email',[
             'user'=>$this->user
 

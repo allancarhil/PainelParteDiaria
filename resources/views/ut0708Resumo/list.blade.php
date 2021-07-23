@@ -29,7 +29,7 @@
     <div class="card">
 
         <div class="card-body">
-6
+
             <table class="table">
                 <thead class="table-dark table-bordered">
                     <tr>
@@ -417,13 +417,14 @@
                 <br />
                 <table class="table">
                 <tbody style="font-size: 20px; font-weight:500;">
-                    <tr>
-                        <form action="ut37/{{$d->id}}/pdf" method="post" target="_blank">
+                <tr>
+                        <form action="ut078Resumo/{{$d->id}}/pdf" method="post" target="_blank">
                             @csrf
                             <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
                         </form>
+                    </tr>
 
-                        <form action="ut37/{{$d->id}}/pdf" method="post" target="_blank">
+                        <form action="ut07/{{$d->id}}/pdf" method="post" target="_blank">
                             @csrf
                             <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
                         </form>

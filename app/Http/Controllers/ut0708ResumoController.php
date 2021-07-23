@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use PDF;
+use Exception;
+use App\Models\Api;
 class ut0708ResumoController extends Controller
 {
     /*public function index(){
@@ -57,38 +59,17 @@ class ut0708ResumoController extends Controller
 
     }
 
+    public function exportPDF($id){
 
-    public function exportPDF($id)
-    {
+        try{
+            $api = new Api();
+            $d = $api->getAll("ut07/" . $id);
 
-        try {
-            $ch = curl_init();
-            $url = "http://127.0.0.1:8080/ut0708Resumo/" . $id;
-
-            curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-            //curl_setopt($ch, CURLOPT_SSL_VERIFYPEER,false);
-            $response = curl_exec($ch);
-
-            if ($e = curl_error($ch)) {
-                echo $e;
-            } else {
-                $d = json_decode($response);
-            }
-            //dd($dados);
-            //return view('uc06.pdf', compact('d'));
-            set_time_limit(300);
-            
-            
-            
-            $pdf = PDF::loadView('ut0708Resumo.pdf', compact('d'))->setOptions([
-                'isRemoteEnabled' => TRUE,
-                'dpi' => 115, 
-                'defaultFont' => 'sans-serif'
-            ])->setPaper('a4');
-            return $pdf->stream('ut0708Resumo-relatorio.pdf');
-            
-        } catch (Exception $e) {
+            $pdf = PDF::loadView('ut07.pdf', compact('d'))->setOptions(['isRemoteEnabled' => TRUE,'dpi' => 110, 'defaultFont' => 'sans-serif'])->setPaper('a4');
+            return $pdf->stream('ut07-relatorio.pdf', array("Attachment" => true));
+        }catch(Exception $error ){
+            return view('error', compact('error'));
         }
     }
+ 
 }

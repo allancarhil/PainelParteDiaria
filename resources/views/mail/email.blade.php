@@ -1,0 +1,1 @@
+<h1>Relatório resumo de equipamento</h1>

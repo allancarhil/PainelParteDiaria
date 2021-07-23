@@ -20,6 +20,7 @@
                     <input type="date" name="data" label="Dia-Mes-Ano" class="form-control " >
                 </div>               
                  <button type="submit" class="btn btn-primary">Buscar</button>
+                 <button type="submit" class="btn btn-primary">Mostrar Todos</button>
             </form>        
         </div>
     </div>

@@ -16,19 +16,18 @@
     </thead>
 
     <tbody>
-        @foreach($dados as $d)
+        
         <tr>
-            <td>{{$d->data}}</td>
-            <td>{{$d->motorista}}</td>
-            <td>{{$d->horaInicial}}</td>
-            <td>{{$d->horaFinal}}</td>
-            <td>{{$d->kmInicial}}</td>
-            <td>{{$d->kmFinal}}</td>
-            <td>{{$d->servicos}}</td>
-            <td>{{$d->lanternagem}}</td>
-            <td>{{$d->pneus}}</td>
-            <td>{{$d->observacoes}}</td>
+            <td>{{$dados->data}}</td>
+            <td>{{$dados->motorista}}</td>
+            <td>{{$dados->horaInicial}}</td>
+            <td>{{$dados->horaFinal}}</td>
+            <td>{{$dados->kmInicial}}</td>
+            <td>{{$dados->kmFinal}}</td>
+            <td>{{$dados->servicos}}</td>
+            <td>{{$dados->lanternagem}}</td>
+            <td>{{$dados->pneus}}</td>
+            <td>{{$dados->observacoes}}</td>
         </tr>
-        @endforeach
     </tbody>
 </table>

@@ -23,11 +23,13 @@ Route::group(['middleware' => 'web'], function () {
 });
 
 #Us36 Routes
-
+Route::get('/us36/index', [App\Http\Controllers\Us36Controller::class, 'index'])->middleware('auth');
 Route::post('/us36', [App\Http\Controllers\Us36Controller::class, 'data'])->middleware('auth');
 Route::get('/us36/form', [App\Http\Controllers\Us36Controller::class, 'form'])->middleware('auth');
 Route::post('us36/{id}/pdf', [App\Http\Controllers\Us36Controller::class, 'exportPDF'])->name('pdf');
-Route::get('us36/excel', [App\Http\Controllers\Us36Controller::class, 'exportExcel'])->name('excel');
+//Route::get('/us36/excel', [App\Http\Controllers\Us36Controller::class, 'exportExcel'])->name('excel');
+Route::post('/{equipamento}/excel/{id}', [App\Http\Controllers\Us36Controller::class, 'exportExcelId'])->name('excelId');
+Route::post('/{equipamento}/excel/{data}', [App\Http\Controllers\Us36Controller::class, 'exportExcelData'])->name('excelData');
 
 #End Us36 Routes
 

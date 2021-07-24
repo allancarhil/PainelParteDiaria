@@ -1,6 +1,9 @@
 @extends('adminlte::page')
 
 @section('content')
+foreach($dados as $date){
+    
+}
 <div class="container">
     <div class="card-header" style="background-color: #6ab2ec">
         <table class="table table-borderless justify">
@@ -8,7 +11,14 @@
                 <th scope="col">
                     <h1 style="font-weight: bold;">US-37</h1>
                 </th>
-                <th scope="col" class="d-flex justify-content-end"><a class="btn btn-light" href="{{url('us36/form')}}" style="color:#000000">Voltar</a></th>
+                <th scope="col" class="d-flex justify-content-end">
+                    <a class="btn btn-light" href="{{url('us36/form')}}" style="color:#000000; margin-right: 10px;">Voltar</a>
+
+                    <form action="/us36/excel/{{$d->data}}" method="post" target="_blank">
+                        @csrf
+                        <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar Excel</button>
+                    </form>
+                </th>
             </tr>
         </table>
 
@@ -125,6 +135,7 @@
                 </table>
 
                 <br />
+
                 <table class="table">
 
                     <tbody>
@@ -135,10 +146,12 @@
                             </form>
                         </tr>
                         <tr>
-                   
-                   <a href="us36/excel" class="btn" style="background-color: #6ab2ec;" target="_blank">Exportar Excel</a>
-              
-           </tr>
+                            <form action="/us36/excel/{{$d->id}}" method="post" target="_blank">
+                                @csrf
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar Excel</button>
+                            </form>
+
+                        </tr>
                     </tbody>
                 </table>
         </div>

@@ -6,11 +6,23 @@ use Illuminate\Http\Request;
 use Exception;
 use PDF;
 use App\Models\Api;
-use App\Exports\Us36Export;
+use App\Exports\ExportExcelId;
+use App\Exports\ExportExcelData;
 use Maatwebsite\Excel\Facades\Excel as Excel;
 
 class Us36Controller extends Controller
 {
+    public function index(){
+        try{
+            $api = new Api();
+            $dados = $api->getAll("us36");
+
+            return view('us36.list', compact('dados'));
+        }catch(Exception $error ){
+            return view('error', compact('error'));
+        }
+    }
+
     public function data(Request $request){
         try{
             $data =  date( 'd-m-Y' , strtotime($request->get("data")));
@@ -42,10 +54,20 @@ class Us36Controller extends Controller
         }
     }
 
-    public function exportExcel(){
+    public function exportExcelId($equipamento, $id){
 
         try{
-            return Excel::download(new Us36Export, 'us36.xlsx');
+            return Excel::download(new ExportExcelId($equipamento, $id), 'us36.xlsx');
+
+        }catch(Exception $error){
+            echo  $error;
+        }
+    }
+
+    public function exportExcelData($equipamento, $data){
+        try{
+            dd($data);
+            return Excel::download(new ExportExcelData($equipamento, $data), "{$equipamento}-{$data}.xlsx");
 
         }catch(Exception $error){
             echo  $error;

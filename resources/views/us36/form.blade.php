@@ -12,16 +12,23 @@
                 {{ session('status') }}
             </div>
             @endif
+            <div class="form-group">
+                <form action="{{url('us36')}}" method="POST">
+                    @csrf
+                    <div class="form-group">
+                        <label for="exampleInputData">Data: </label>
+                        <input type="date" name="data" label="Dia-Mes-Ano" class="form-control ">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Buscar</button>
+                    <a href="{{url('us36/index')}}" class="btn btn-primary">Mostrar Todos</a>
+                </form>
 
-            <form action="{{url('us36')}}" method="POST">
-                @csrf
-                <div class="form-group">
-                    <label for="exampleInputData">Data: </label>
-                    <input type="date" name="data" label="Dia-Mes-Ano" class="form-control ">
-                </div>
-                <button type="submit" class="btn btn-primary">Buscar</button>
-                <a href="{{url('us36/index')}}" class="btn btn-primary">Mostrar Todos</a>
-            </form>
+                <form action="{{url('/us36/excel')}}" method="POST" target="_blank">
+                    @csrf
+                    <button type="submit" class="btn btn-primary">Exportar todos</button>
+                </form>
+
+            </div>
         </div>
     </div>
 </div>

@@ -5,17 +5,17 @@ namespace App\Exports;
 use Illuminate\Contracts\View\View;
 use Maatwebsite\Excel\Concerns\FromView;
 
-class ExportExcelData implements FromView
+class ExportExcel implements FromView
 {
-    private $data;
     private $dados;
     private $url;
     private $equipamento;
 
-    public function __construct($equipamento, $data) {
+    public function __construct($equipamento) {
         $this->equipamento = $equipamento;
-        $this->data = $data;
-        $this->url = "http://127.0.0.1:8080/". $this->equipamento . "/data". "/" . $this->data;
+        $this->url = "http://127.0.0.1:8080/". $this->equipamento;
+
+
         $ch = curl_init();
         
         curl_setopt($ch,CURLOPT_URL, $this->url);
@@ -27,15 +27,15 @@ class ExportExcelData implements FromView
 
         $this->dados = $dados;
         return $this->dados;
+        
     }
     /**
     * @return \Illuminate\Support\Collection
     */
     public function view(): View
-    { 
-        $dados = $this->dados;
-        return view("exports.{$this->equipamento}.{$this->equipamento}ExportsData", [
-            'dados' => $dados
+    {   
+        return view("exports.{$this->equipamento}Exports", [
+            'dados' => $this->dados
         ]);
     }
 }

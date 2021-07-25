@@ -8,6 +8,7 @@ use PDF;
 use App\Models\Api;
 use App\Exports\ExportExcelId;
 use App\Exports\ExportExcelData;
+use App\Exports\ExportExcel;
 use Maatwebsite\Excel\Facades\Excel as Excel;
 
 class Us36Controller extends Controller
@@ -55,7 +56,6 @@ class Us36Controller extends Controller
     }
 
     public function exportExcelId($equipamento, $id){
-
         try{
             return Excel::download(new ExportExcelId($equipamento, $id), 'us36.xlsx');
 
@@ -66,9 +66,15 @@ class Us36Controller extends Controller
 
     public function exportExcelData($equipamento, $data){
         try{
-            dd($data);
-            return Excel::download(new ExportExcelData($equipamento, $data), "{$equipamento}-{$data}.xlsx");
+            Excel::download(new ExportExcelData($equipamento, $data), "us36.xlsx");
+        }catch(Exception $error){
+            echo  $error;
+        }
+    }
 
+    public function exportExcel($equipamento){
+        try{
+            Excel::download(new ExportExcel($equipamento), "us36.xlsx");
         }catch(Exception $error){
             echo  $error;
         }

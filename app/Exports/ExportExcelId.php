@@ -36,7 +36,7 @@ class ExportExcelId implements FromView
     */
     public function view(): View
     {   
-        return view("exports.{$this->equipamento}.{$this->equipamento}ExportsId", [
+        return view("exports.exportsId.{$this->equipamento}ExportsId", [
             'dados' => $this->dados
         ]);
     }

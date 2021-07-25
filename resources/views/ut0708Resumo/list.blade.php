@@ -11,9 +11,7 @@
                 <th scope="col" class="d-flex justify-content-end"><a class="btn btn-light" href="{{url('ut0708Resumo/form')}}" style="color:#000000">Voltar</a></th>
             </tr>
         </table>
-
     </div>
-
 
     @if (session('status'))
     <div class="alert alert-success" role="alert">
@@ -43,12 +41,6 @@
 
                     </tr>
                 </tbody>
-            
-                   
-
-            
-
-
 
                 <br />
                 <table class="table">
@@ -61,36 +53,33 @@
                     </thead>
                 </table>
 
-
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>07:00 às 08:00</th>
-         
+
                         </tr>
                     </thead>
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens78078}}</td>
-         
+
                         </tr>
                     </tbody>
                 </table>
-
-
 
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>08:00 às 09:00</th>
-           
+
                         </tr>
                     </thead>
 
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens78089}}</td>
-               
+
                         </tr>
                     </tbody>
                 </table>
@@ -99,17 +88,14 @@
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>09:00 às 10:00</th>
-           
+
                         </tr>
-
-
                     </thead>
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens780910}}</td>
-         
-                        </tr>
 
+                        </tr>
                     </tbody>
                 </table>
 
@@ -117,40 +103,32 @@
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>10:00 às 11:00</th>
-       
+
                         </tr>
-
-
                     </thead>
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801011}}</td>
-          
-                        </tr>
 
+                        </tr>
                     </tbody>
                 </table>
-
-
 
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>11:00 às 12:00</th>
- 
+
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801112}}</td>
 
                         </tr>
-
                     </tbody>
                 </table>
-
 
                 <table class="table">
                     <thead class="table-dark table-bordered">
@@ -158,15 +136,13 @@
                             <th>12:00 às 13:00</th>
 
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801213}}</td>
 
                         </tr>
-
                     </tbody>
                 </table>
 
@@ -176,15 +152,12 @@
                             <th>13:00 às 14:00</th>
 
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801314}}</td>
-
                         </tr>
-
                     </tbody>
                 </table>
 
@@ -192,17 +165,15 @@
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>14:00 às 15:00</th>
-   
+
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801415}}</td>
-         
-                        </tr>
 
+                        </tr>
                     </tbody>
                 </table>
 
@@ -210,36 +181,27 @@
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>15:00 às 16:00</th>
-
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801516}}</td>
-
                         </tr>
-
                     </tbody>
                 </table>
-
 
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>16:00 às 17:00</th>
- 
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801617}}</td>
-
                         </tr>
-
                     </tbody>
                 </table>
 
@@ -249,15 +211,12 @@
                             <th>17:00 às 18:00</th>
 
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens7801718}}</td>
-
                         </tr>
-
                     </tbody>
                 </table>
 
@@ -265,33 +224,27 @@
                     <thead class="table-dark table-bordered">
                         <tr>
                             <th>Soma</th>
- 
+
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->soma780}}</td>
-
                         </tr>
-
                     </tbody>
                 </table>
 
-
-
-
                 <br />
+
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr style="background-color: #6ab2ec; color: black;">
                             <th scope="col" width="1500px">Viagens para estoque</th>
-
                         </tr>
-
                     </thead>
                 </table>
+
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr>
@@ -302,8 +255,6 @@
                             <th>Bica-Praça</th>
                             <th>Bica-790</th>
                         </tr>
-
-
                     </thead>
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
@@ -314,7 +265,6 @@
                             <td>{{$d->numViagensBicaPr}}</td>
                             <td>{{$d->numViagensBica790}}</td>
                         </tr>
-
                     </tbody>
 
                     <thead class="table-dark table-bordered">
@@ -325,7 +275,6 @@
                             <th>Brita 0-Praça</th>
                             <th>Brita 0 U&M</th>
                             <th></th>
-
                         </tr>
                     </thead>
                     <tbody style="font-size: 20px; font-weight:500;">
@@ -336,22 +285,19 @@
                             <td>{{$d->numViagensBr0Pr}}</td>
                             <td>{{$d->numViagensBr0Um}}</td>
                         </tr>
-
                     </tbody>
                 </table>
 
-
-
                 <br />
+
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr style="background-color: #6ab2ec; color: black;">
                             <th scope="col" width="1500px">Demais Serviços</th>
-
                         </tr>
-
                     </thead>
                 </table>
+
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr>
@@ -362,8 +308,6 @@
                             <th>AIM para traços</th>
                             <th>Fundo U&M</th>
                         </tr>
-
-
                     </thead>
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
@@ -374,21 +318,20 @@
                             <td>{{$d->numViagensAim}}</td>
                             <td>{{$d->numViagensFundo}}</td>
                         </tr>
-
                     </tbody>
                 </table>
 
-
                 <br />
+
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr style="background-color: #6ab2ec; color: black;">
                             <th scope="col" width="588px">Viagens Fogacho</th>
 
                         </tr>
-
                     </thead>
                 </table>
+
                 <table class="table">
                     <thead class="table-dark table-bordered">
                         <tr>
@@ -397,9 +340,8 @@
                             <th>800</th>
                             <th>810</th>
                         </tr>
-
-
                     </thead>
+
                     <tbody style="font-size: 20px; font-weight:500;">
                         <tr>
                             <td>{{$d->numViagens780}}</td>
@@ -407,33 +349,31 @@
                             <td>{{$d->numViagens800}}</td>
                             <td>{{$d->numViagens810}}</td>
                         </tr>
-
                     </tbody>
                 </table>
 
+                <br />
 
                 <br />
-                
-                <br />
                 <table class="table">
-                <tbody style="font-size: 20px; font-weight:500;">
-                <tr>
-                        <form action="ut078Resumo/{{$d->id}}/pdf" method="post" target="_blank">
-                            @csrf
-                            <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
-                        </form>
-                    </tr>
+                    <tbody style="font-size: 20px; font-weight:500;">
+                        <tr>
+                            <form action="ut078Resumo/{{$d->id}}/pdf" method="post" target="_blank">
+                                @csrf
+                                <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar PDF</button>
+                            </form>
+                        </tr>
 
                         <form action="ut07/{{$d->id}}/pdf" method="post" target="_blank">
                             @csrf
                             <button type="submit" class="btn" style="background-color: #6ab2ec;">Exportar EXCEL</button>
                         </form>
-                    </tr>
-                </tbody>
-            </table>
+                        </tr>
+                    </tbody>
+                </table>
         </div>
     </div>
-<br/>
+    <br />
     @endforeach
 </div>
 

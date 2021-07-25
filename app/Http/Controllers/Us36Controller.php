@@ -36,14 +36,12 @@ class Us36Controller extends Controller
         }
     }
 
-
     public function form(){
 
         return view('us36.form');
     }
 
     public function exportPDF($id){
-
         try{
             $api = new Api();
             $d = $api->getAll("us36/" . $id);
@@ -57,8 +55,7 @@ class Us36Controller extends Controller
 
     public function exportExcelId($equipamento, $id){
         try{
-            return Excel::download(new ExportExcelId($equipamento, $id), 'us36.xlsx');
-
+            return Excel::download(new ExportExcelId($equipamento, $id), "us36-{$id}.xlsx");
         }catch(Exception $error){
             echo  $error;
         }
@@ -66,7 +63,7 @@ class Us36Controller extends Controller
 
     public function exportExcelData($equipamento, $data){
         try{
-            Excel::download(new ExportExcelData($equipamento, $data), "us36.xlsx");
+            return Excel::download(new ExportExcelData($equipamento, $data), "us36-{$data}.xlsx");
         }catch(Exception $error){
             echo  $error;
         }
@@ -74,10 +71,9 @@ class Us36Controller extends Controller
 
     public function exportExcel($equipamento){
         try{
-            Excel::download(new ExportExcel($equipamento), "us36.xlsx");
+           return Excel::download(new ExportExcel($equipamento), "us36-todos.xlsx");
         }catch(Exception $error){
             echo  $error;
         }
     }
-
 }

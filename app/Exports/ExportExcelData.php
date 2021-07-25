@@ -34,7 +34,7 @@ class ExportExcelData implements FromView
     public function view(): View
     { 
         $dados = $this->dados;
-        return view("exports.{$this->equipamento}.{$this->equipamento}ExportsData", [
+        return view("exports.{$this->equipamento}Exports", [
             'dados' => $dados
         ]);
     }
